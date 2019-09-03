@@ -13,13 +13,13 @@ private clientsecret='e3fee779ae2a9a45828ea5b28b09466b91140485';
     console.log("service is ready");
     this.username = 'umwalidiane69';
 
-//   }
-//   getProfileInfo(){
-//     return this.http.get("https://api.github.com/users/"
-//      + this.username + "?access_token="+ this.clientsecret)
+  }
+  getProfileInfo(){
+    return this.http.get("https://api.github.com/users/"
+     + this.username + "?access_token="+ this.clientsecret)
     
-// }
-// getProfileRepos(){
+}
+getProfileRepos(){
 //   return this.http.get("https://api.github.com/users/"
 //   + this.username + "/repos?access_token="+ this.clientsecret)
 // }
