@@ -12,18 +12,18 @@ username:string;
   constructor(private profileService:ProfeService) { 
     
   }
-//   findProfile(){
-//     this.profileService.updateProfile(this.username);
-//     this.profileService.getProfileInfo().subscribe(profile => {
-//       console.log(profile);
-//       this.profile = profile;
-//     });
-//     this.profileService.getProfileRepos().subscribe(repos =>{
-//       console.log(repos);
-//       this.repos = repos;
-//     })
-//   }
-//   ngOnInit() {
-//   }
+  findProfile(){
+    this.profileService.updateProfile(this.username);
+    this.profileService.getProfileInfo().subscribe(profile => {
+      console.log(profile);
+      this.profile = profile;
+    });
+    this.profileService.getProfileRepos().subscribe(repos =>{
+      console.log(repos);
+      this.repos = repos;
+    })
+  }
+  ngOnInit() {
+  }
 
-// }
+}
