@@ -2,16 +2,16 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { TouchSequence } from 'selenium-webdriver';
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class ProfeService {
-// private username:string;
+@Injectable({
+  providedIn: 'root'
+})
+export class ProfeService {
+private username:string;
 
-// private clientsecret='e3fee779ae2a9a45828ea5b28b09466b91140485';
-//   constructor(private http:HttpClient) { 
-//     console.log("service is ready");
-//     this.username = 'umwalidiane69';
+private clientsecret='e3fee779ae2a9a45828ea5b28b09466b91140485';
+  constructor(private http:HttpClient) { 
+    console.log("service is ready");
+    this.username = 'umwalidiane69';
 
 //   }
 //   getProfileInfo(){
