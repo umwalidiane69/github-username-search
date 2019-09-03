@@ -1,39 +1,44 @@
+<div class="se">
 <form action="">
+        <p id="se">Search Your Github Account<br>
+            Here!</p>
     <div class="form-group">
+            
         <input type="text" class="form-control" placeholder="search username"[(ngModel)]="username" name="username"
         (keyup)="findProfile()">
     </div>
+    
 </form>
 
  <div class="container">
 <div *ngIf="profile">
 <div class="row">
    
-            <div class="col-md-5">
+            <div class="col-md-3">
                 <img src="{{profile.avatar_url}}" width="200px" height="200px" alt="Profile Image">
             </div>
-          <div class="col-md-3">
-             <div>
-        profile name {{profile.name}} <br>
-        <small>{{profile.login}}</small>
+          <div class="col-md-4">
+             
+        profile name: {{profile.name}} <br>
+        {{profile.login}}
         <span *ngIf="profile.company">, Works at {{profile.company}}</span><br>
-        location {{profile.location}}
-            </div>
+        location: {{profile.location}}
+            
     
                <ul >
-                    <li class="list-group- item" *ngIf="profile.bio">{{profile.bio}}</li>
-                    <li class="list-group- item" *ngIf="profile.hireable">Available for hire</li>
-                   <li class="list-group- item" *ngIf="profile.blog"><a href="{{profile.blog}}" target="_blank">{{profile.blog}}</a></li> 
-                    <li class="list-group- item" *ngIf="profile.email"><a href="emailto:{{profile.email}}">{{profile.email}}</a></li>
+                    <li *ngIf="profile.bio">{{profile.bio}}</li>
+                    <li *ngIf="profile.hireable">Available for hire</li>
+                   <li *ngIf="profile.blog"><a href="{{profile.blog}}" target="_blank">{{profile.blog}}</a></li> 
+                    <li *ngIf="profile.email"><a href="emailto:{{profile.email}}">{{profile.email}}</a></li>
                 </ul>
     </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
                
-                    <p>
-                        <span class="label label-default">{{profile.followers}} Followers</span>
-                        <span class="label label-primary">  Following {{profile.following}} </span>
-                        <span class="label label-success"> {{profile.public_gists}}public gists</span>
-                        <span class="label label-info"> {{profile.public_repos}} Public Repos</span>
+                    <p id="bac">
+                        <span id="bu">{{profile.followers}} Followers </span>
+                        <span id="ye">  Following {{profile.following}} </span>
+                        <span id="ge"> {{profile.public_gists}} public gists </span>
+                        <span id="co"> {{profile.public_repos}} Public Repos </span>
                         
                     </p>
                 </div>
@@ -52,8 +57,9 @@
                         </div>
                     </div>
                 
-            
+                </div>            
         
   
 </div>
-</div> 
+
+
