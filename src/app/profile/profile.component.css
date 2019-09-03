@@ -1,4 +1,4 @@
-/* #bu{
+ #bu{
     background-color:burlywood;
     width: 20px;
     height: 8px;
@@ -12,7 +12,7 @@
 #co{
     background-color: rgb(183, 137, 189)
 }
-.se{
+/* .se{
     background-image: url("https://media.mnn.com/assets/images/2015/08/forest-waterfall-thailand.jpg.838x0_q80.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,4 +35,4 @@ input{
 .container{
     padding-top: 345px;
     /* background-color: rgb(199, 241, 241); */
-} */
+}  */
