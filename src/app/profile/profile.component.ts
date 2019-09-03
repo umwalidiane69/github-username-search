@@ -5,13 +5,13 @@ import { ProfeService } from '../profe.service';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-// export class ProfileComponent implements OnInit {
-//   profile:any;
-// repos:any;
-// username:string;
-//   constructor(private profileService:ProfeService) { 
+export class ProfileComponent implements OnInit {
+  profile:any;
+repos:any;
+username:string;
+  constructor(private profileService:ProfeService) { 
     
-//   }
+  }
 //   findProfile(){
 //     this.profileService.updateProfile(this.username);
 //     this.profileService.getProfileInfo().subscribe(profile => {
