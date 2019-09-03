@@ -12,14 +12,15 @@
             <div class="col-md-5">
                 <img src="{{profile.avatar_url}}" width="200px" height="200px" alt="Profile Image">
             </div>
-        <!--     <div class="col-md-3">
+          <div class="col-md-3">
              <div>
-        {{profile.name}} <small>{{profile.login}}</small>
-        <span *ngIf="profile.company">, Works at {{profile.company}}</span>
-        {{profile.location}}
+        profile name {{profile.name}} <br>
+        <small>{{profile.login}}</small>
+        <span *ngIf="profile.company">, Works at {{profile.company}}</span><br>
+        location {{profile.location}}
             </div>
     
-                <ul >
+           <!--      <ul >
                     <li class="list-group- item" *ngIf="profile.bio">{{profile.bio}}</li>
                     <li class="list-group- item" *ngIf="profile.hireable">Available for hire</li>
                    <li class="list-group- item" *ngIf="profile.blog"><a href="{{profile.blog}}" target="_blank">{{profile.blog}}</a></li> 
