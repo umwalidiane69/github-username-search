@@ -20,10 +20,10 @@ private clientsecret='e3fee779ae2a9a45828ea5b28b09466b91140485';
     
 }
 getProfileRepos(){
-//   return this.http.get("https://api.github.com/users/"
-//   + this.username + "/repos?access_token="+ this.clientsecret)
-// }
-// updateProfile(username){
-// this.username = username;
-// }
-// }
+  return this.http.get("https://api.github.com/users/"
+  + this.username + "/repos?access_token="+ this.clientsecret)
+}
+updateProfile(username){
+this.username = username;
+}
+}
